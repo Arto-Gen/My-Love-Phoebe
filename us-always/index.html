@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f2e9" />
+  <meta name="description" content="A little world for Phoebe Joy, made with love by Jay. Our story, our memories, and all the beautiful things still to come." />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Us, always — For Phoebe, from Jay</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/heart.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="./assets/hero.jpg" as="image" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./extras.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to our story</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Us, always — home"><span data-icon="heart" class="brand-heart"></span>us, always<span class="brand-dot">.</span></a>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#story">Our story</a><a href="#reasons">Little things</a><a href="#memories">Memories</a><a href="#play">Just for us</a>
+    </nav>
+    <div class="header-actions">
+      <button id="music-toggle" class="music-toggle" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="music-label">Play our soundtrack</span></button>
+      <button id="menu-toggle" class="icon-button menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span data-icon="menu"></span></button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="floating-hearts" aria-hidden="true"><span>♡</span><span>♡</span><span>✧</span><span>♡</span><span>✧</span></div>
+      <div class="hero-copy">
+        <p class="dedication"><span class="tiny-heart">♡</span> A little corner of the world, just for you</p>
+        <h1 id="hero-title">In every lifetime,<br> I'd find <em>you.</em></h1>
+        <p class="hero-name">For <span data-name>Phoebe Joy</span>, the love of my life.</p>
+        <p class="hero-description">If I could give you the world, I would.<br> For now, here’s a little one I made just for us.</p>
+        <div class="hero-buttons"><a class="button button-wine" href="#story">Step into our story <span data-icon="arrow-right"></span></a><a class="text-link" href="#letter"><span data-icon="mail"></span> A letter for you</a></div>
+        <div class="hero-signoff"><span class="drawn-line"></span> made with all my heart, <span data-from>Jay</span></div>
+      </div>
+      <div class="hero-art" aria-label="A scrapbook of our someday moments">
+        <span class="art-sparkle sparkle-one" aria-hidden="true">✧</span>
+        <!-- YOUR HERO PHOTOS: edit content.hero in content.js -->
+        <figure class="hero-polaroid main-polaroid"><div class="tape" aria-hidden="true"></div><img id="hero-photo" width="400" height="480" fetchpriority="high" alt="" /><figcaption>my favorite place is next to you ♡</figcaption></figure>
+        <figure class="hero-polaroid small-polaroid"><img id="hero-small-photo" width="210" height="190" alt="" /><figcaption>our next adventure…</figcaption></figure>
+        <span class="scribble-heart" aria-hidden="true">♡</span>
+        <div class="forever-stamp" aria-label="You and me, always"><span>you & me</span><span data-icon="heart"></span><span>always</span></div>
+        <span class="art-sparkle sparkle-two" aria-hidden="true">✧</span>
+      </div>
+      <a href="#love-clock" class="scroll-cue"><span></span> A love worth scrolling for</a>
+    </section>
+    <section id="love-clock" class="love-clock section-wrap" aria-label="Time we have been together">
+      <div class="clock-heading"><span class="small-label">Ever since you said yes</span><h2>Every second, still you.</h2><p>Our forever began <span id="anniversary-label">December 17, 2023</span></p></div>
+      <div class="timer" role="timer" aria-label="Elapsed time since our anniversary"><div><span id="timer-days">—</span><small>days</small></div><b>:</b><div><span id="timer-hours">—</span><small>hours</small></div><b>:</b><div><span id="timer-minutes">—</span><small>minutes</small></div><b>:</b><div><span id="timer-seconds">—</span><small>seconds</small></div></div>
+      <div class="clock-heart" aria-hidden="true">♡</div>
+    </section>
+    <section id="story" class="story-section section-wrap section-space" aria-labelledby="story-title">
+      <div class="section-heading"><div><span class="section-kicker"><span data-icon="book-open"></span> Our little love story</span><h2 id="story-title">It was always going to be you.</h2></div><p>A few chapters from my favorite story.<br> And we’re only getting started.</p></div>
+      <div id="timeline" class="timeline"></div>
+      <p class="handwritten timeline-end">to be continued, together… <span>♡</span></p>
+    </section>
+    <section id="reasons" class="reasons-section" aria-labelledby="reasons-title"><div class="section-wrap section-space">
+      <div class="section-heading"><div><span class="section-kicker"><span data-icon="heart"></span> The little things are the big things</span><h2 id="reasons-title">A jar full of <em>you.</em></h2></div><p>For the days you need a little reminder.<br> There are a million reasons. Here’s one.</p></div>
+      <div id="reasons-content"></div>
+    </div></section>
+    <section id="memories" class="memories-section section-wrap section-space" aria-labelledby="memories-title">
+      <div class="section-heading"><div><span class="section-kicker"><span data-icon="camera"></span> Collected with love</span><h2 id="memories-title">Little moments. Lasting magic.</h2></div><p>Places for the memories we’ll keep forever.<br> Tap a photo. There’s a little note for you.</p></div>
+      <div class="gallery-toolbar"><div class="gallery-filters" role="group" aria-label="Filter memories"><button class="filter-button active" data-filter="All" aria-pressed="true">All our moments <span>6</span></button><button class="filter-button" data-filter="Little moments" aria-pressed="false">Little moments</button><button class="filter-button" data-filter="Adventures" aria-pressed="false">Adventures</button></div><span class="gallery-hint handwritten">a scrapbook of our someday ♡</span></div>
+      <!-- YOUR GALLERY PHOTOS: edit content.memories in content.js -->
+      <div id="gallery" class="gallery"></div>
+      <p class="photo-footnote">A little inspiration board, waiting for our own photographs.</p>
+    </section>
+    <section id="play" class="play-section section-wrap section-space" aria-label="Little games and big dreams">
+      <div class="play-column"><div class="mini-heading"><span class="section-kicker"><span data-icon="sparkles"></span> A little friendly competition</span><h2>How well do you know us?</h2><p>No pressure. You already have my heart.</p></div><div id="quiz-content"></div></div>
+      <div class="play-column"><div class="mini-heading"><span class="section-kicker"><span data-icon="compass"></span> The future looks like you</span><h2>Our someday list.</h2><p>Big dreams. Little adventures. All with you.</p></div><div id="bucket-content"></div></div>
+    </section>
+    <section id="coupons" class="coupons-section section-wrap section-space" aria-labelledby="coupons-title"><div class="section-heading"><div><span class="section-kicker"><span data-icon="gift"></span> Perks of being my favorite person</span><h2 id="coupons-title">A little love, on demand.</h2></div><p>Made for you. Redeemable with me.<br> No expiration date on making you happy.</p></div><div id="coupons-content"></div></section>
+    <section id="letter" class="letter-section" aria-labelledby="letter-title"><div class="letter-stars" aria-hidden="true">✧<span>✧</span>✧</div><span class="section-kicker">Saved the most important part for last</span><h2 id="letter-title">Some things are better<br> written from the heart.</h2><p>For <span data-full-name>Phoebe Joy P. Alcaraz</span>.<br> Only you could make me this sentimental.</p><button id="open-letter" class="envelope-button" aria-haspopup="dialog"><span class="envelope-flap" aria-hidden="true"></span><span class="envelope-address handwritten">To my Phoebe,</span><span class="wax-seal" aria-hidden="true">J</span><span class="envelope-caption">Open my letter <span data-icon="arrow-right"></span></span></button><span class="letter-bottom handwritten">a piece of my heart, folded just for you</span></section>
+  </main>
+  <footer class="site-footer section-wrap"><a href="#home" class="brand"><span data-icon="heart" class="brand-heart"></span>us, always.</a><p>For all that we are. And all that we’ll become.</p><span>Made with love, by <span data-from>Jay</span> <span class="tiny-heart">♡</span></span></footer>
+  <dialog id="memory-dialog" class="memory-dialog"><button class="dialog-close icon-button" data-close-dialog aria-label="Close memory"><span data-icon="close"></span></button><div class="memory-dialog-image"><img id="memory-image" alt="" /></div><div class="memory-dialog-note"><span class="section-kicker">A little note, just for you</span><h2 id="memory-title"></h2><p id="memory-note" class="handwritten"></p><span class="handwritten">Love, <span data-from>Jay</span> ♡</span><div class="memory-navigation"><button id="previous-memory" class="icon-button" aria-label="Previous memory"><span data-icon="arrow-left"></span></button><span id="memory-count"></span><button id="next-memory" class="icon-button" aria-label="Next memory"><span data-icon="arrow-right"></span></button></div></div></dialog>
+  <dialog id="letter-dialog" class="letter-dialog" aria-labelledby="letter-dialog-title"><button class="dialog-close icon-button" data-close-dialog aria-label="Close letter"><span data-icon="close"></span></button><article class="letter-paper"><span class="letter-paper-heart" aria-hidden="true">♡</span><span class="small-label">A letter I hope you’ll keep</span><h2 id="letter-dialog-title" class="handwritten">My dearest <span data-name>Phoebe Joy</span>,</h2><div id="letter-paragraphs"></div><p class="letter-signature handwritten">In this lifetime, and every one after,<br> <span data-from>Jay</span> <span>♡</span></p><button id="keep-letter" class="button button-wine"><span data-icon="heart"></span> Keeping this close to my heart</button></article></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="celebration" aria-hidden="true"></div>
+  <noscript><p class="no-script">Please enable JavaScript to open the memories, play our music, and explore the little surprises.</p></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

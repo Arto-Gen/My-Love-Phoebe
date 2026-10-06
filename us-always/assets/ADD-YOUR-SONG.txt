@@ -1,0 +1,17 @@
+ADD YOUR SONG
+
+1. Copy your MP3 file into this assets folder.
+2. Name it exactly: our-song.mp3
+3. Refresh the website and click "Play our soundtrack".
+
+No code editing is needed. To change the song later, replace our-song.mp3
+with your new MP3 and refresh the website.
+
+In Windows File Explorer, turn on View > Show > File name extensions.
+Check that the name is our-song.mp3, not our-song.mp3.mp3.
+Use a real MP3 file: renaming a different audio format does not convert it.
+
+Until you add a playable song, the website plays its built-in instrumental.
+
+Optional: in content.js, change music.src to use a different filename,
+or adjust music.volume from 0 (silent) to 1 (full volume).
