@@ -1,0 +1,15 @@
+{
+  "name": "us-always",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A little world of love for Phoebe, from Jay.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check app.js && node --check extras.js && node --check music.js && node --check content.js && node --check server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
